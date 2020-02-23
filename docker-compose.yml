@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+### Api ################################################
+    api:
+      image: registry.cn-shanghai.aliyuncs.com/fuyoudock/node
+      volumes:
+        - ./:/var/www
+      tty: true
+      ports:
+        - "7001:7001"
